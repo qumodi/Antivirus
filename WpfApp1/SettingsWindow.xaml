@@ -1,0 +1,16 @@
+﻿<Window x:Class="Antivirus.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Налаштування" Height="300" Width="400">
+    <Grid>
+        <TextBlock Text="Налаштування" FontWeight="Bold" FontSize="16" Margin="0,0,0,10" HorizontalAlignment="Center" />
+        <StackPanel Margin="20">
+            <CheckBox Name="checkBoxSaveReport" Content="Зберігати результати сканування у звіті" Margin="0,5" />
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <RadioButton Name="radioButtonDelete" Content="Видаляти файли одразу" GroupName="ActionAfterDetection" Margin="0,0,10,0" />
+                <RadioButton Name="radioButtonQuarantine" Content="Переміщувати файли в карантин" GroupName="ActionAfterDetection" />
+            </StackPanel>
+            <Button Name="buttonSaveSettings" Content="Зберегти" Click="buttonSaveSettings_Click" HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>

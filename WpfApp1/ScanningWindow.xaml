@@ -1,0 +1,15 @@
+﻿<Window x:Class="AntivirusApp.ScanningWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сканування файлу" Height="200" Width="500">
+    <Grid>
+        <StackPanel>
+            <Label Content="Виберіть файл для сканування" HorizontalContentAlignment="Center" Margin="10" />
+            <Grid Margin="10">
+                <Button Content="..." Width="30" Click="buttonChoose_Click" HorizontalAlignment="Right" />
+                <TextBox x:Name="textBoxPath" Margin="0,0,40,0" VerticalAlignment="Center" />
+            </Grid>
+            <Button x:Name="buttonScan" Content="Розпочати сканування" Margin="10" Click="buttonScan_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
